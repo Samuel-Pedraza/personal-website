@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.row {
+  clear: both;
+  width: 100%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  margin-left: -4px; /*work around to eliminate breaking of inline-box on 33%, not optimal*/
+}
+
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12  {
+    *display: inline; /* this entire section will only be read by ie7 and is a workaround for inline-block*/
+    *zoom: 1;
+    *box-sizing: border-box;
+}
+
+  .col-1 {
+    width: 100%;
+  }
+
+  .col-2 {
+    width: 91%;
+  }
+
+  .col-3 {
+    width: 83%;
+  }
+
+  .col-4 {
+    width: 75%;
+  }
+
+  .col-5 {
+    width: 66%;
+  }
+
+  .col-6 {
+    width: 58%;
+  }
+
+  .col-7 {
+    width: 50%;
+  }
+
+  .col-8 {
+    width: 41%;
+  }
+
+  .col-9 {
+    width: 33%;
+  }
+
+  .col-10 {
+    width: 25%;
+  }
+
+  .col-11 {
+    width: 16%;
+  }
+
+  .col-12 {
+    width:  8%;
+  }
+  
+  .table td {
+    padding: 10px;
+  }
+
+.extra-small{
+  height: 75px;
+}
+
+.small {
+  height: 150px;
+}
+
+.medium {
+  height: 300px;
+}
+
+.large {
+  height: 600px;
+}
+
+.padding-small {
+  padding: 15px;
+}
+
+.padding-medium {
+  padding: 30px;
+}
+
+.padding-large {
+  padding: 45px;
+}
+
+.right {
+  float: right;
+  
+}
+
+.left {
+  float: left;
+  
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+  float: none;
+}
+
+.header {
+  height: 50px;
+  background-color: lightgray;
+}
+
+.list {
+  display: inline-block;
+  padding: 15px;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+  
+  .table td {
+  border-bottom: 1px solid black;
+}
+
+
+@media screen and (max-width: 650px){
+  
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px; /*work around to eliminate breaking of inline-box on 33%, not optimal*/
+  width: 100%;
+
+  }
+  
+  .table td  {
+    padding: 3px;
+  }
+  
+  .list {
+    padding: 10px;
+  }
+}
