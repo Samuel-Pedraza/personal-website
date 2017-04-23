@@ -135,7 +135,14 @@
 
 .header {
   height: 50px;
-  background-color: lightgray;
+  background-color: white;
+}
+
+.fixed-header {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
 }
 
 .list {
@@ -158,6 +165,10 @@
   
   .table td {
   border-bottom: 1px solid black;
+}
+
+.header-image-height {
+  height: 450px;
 }
 
 @media screen and (max-width: 650px){
