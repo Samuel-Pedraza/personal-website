@@ -3,11 +3,18 @@
   margin: 0;
   list-style-type: none;
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 
 .responsive-image {
   width: 100%;
   height: auto;
+}
+
+.list-name{
+  font-size: 18px;
+  font-family: serif;
 }
 
 .row {
@@ -138,6 +145,10 @@
   background-color: white;
 }
 
+.border-style-top {
+  border-top: 1px solid black;
+}
+
 .fixed-header {
   height: 50px;
   width: 100%;
@@ -148,6 +159,11 @@
 .list {
   display: inline-block;
   padding: 15px;
+}
+
+.list:hover {
+  background-color: black;
+  color: white;
 }
 
 .table {
