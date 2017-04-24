@@ -3,11 +3,18 @@
   margin: 0;
   list-style-type: none;
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 
 .responsive-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+.list-name{
+  font-size: 18px;
+  font-family: serif;
 }
 
 .row {
@@ -135,12 +142,28 @@
 
 .header {
   height: 50px;
-  background-color: lightgray;
+  background-color: white;
+}
+
+.border-style-top {
+  border-top: 1px solid black;
+}
+
+.fixed-header {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
 }
 
 .list {
   display: inline-block;
   padding: 15px;
+}
+
+.list:hover {
+  background-color: black;
+  color: white;
 }
 
 .table {
@@ -160,6 +183,9 @@
   border-bottom: 1px solid black;
 }
 
+.header-image-height {
+  height: 450px;
+}
 
 @media screen and (max-width: 650px){
   
