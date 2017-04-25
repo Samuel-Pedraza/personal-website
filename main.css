@@ -4,7 +4,6 @@
   list-style-type: none;
   box-sizing: border-box;
   text-decoration: none;
-  color: black;
 }
 
 .responsive-image {
@@ -142,10 +141,6 @@
   background-color: white;
 }
 
-.border-style-top {
-  border-top: 1px solid black;
-}
-
 .fixed-header {
   height: 50px;
   width: 100%;
@@ -157,6 +152,7 @@
   display: inline-block;
   padding: 15px;
   font-family: sans-serif;
+  color: black;
 }
 
 .table {
@@ -176,9 +172,6 @@
   border-bottom: 1px solid black;
 }
 
-.header-image-height {
-  height: 450px;
-}
 
 @media screen and (max-width: 650px){
   
@@ -198,6 +191,37 @@
   }
   
   .list {
-    padding: 10px;
+    padding: 15px 10px 15px 10px;
+    font-size: 11px;
   }
+}
+
+@media screen and (max-width: 315px){
+  .list {
+    padding: 5px 2px;
+  }
+}
+
+/*custom styles*/
+
+.header-image-height {
+  height: 450px;
+}
+
+
+.border-style-top {
+  border-top: 1px solid black;
+}
+
+.fixed-header {
+  z-index: 1;
+}
+
+.position-bump {
+  position: relative;
+  top: 55px;
+}
+
+.color-black {
+  color: black;
 }
