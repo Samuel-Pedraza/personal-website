@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+div, section {
+  box-sizing: border-box;
+}
+
 .responsive-image {
   width: 100%;
   height: auto;
@@ -224,4 +228,8 @@
 
 .color-black {
   color: black;
+}
+
+.border-bottom-nav {
+  border-bottom: 5px solid #f4fafa;
 }
