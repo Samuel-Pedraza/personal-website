@@ -156,13 +156,7 @@
 .list {
   display: inline-block;
   padding: 15px;
-  font-size: 18px;
   font-family: sans-serif;
-}
-
-.list-style:hover {
-  background-color: black;
-  color: white;
 }
 
 .table {
