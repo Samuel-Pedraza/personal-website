@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  	<link rel="stylesheet" type="text/css" href="../main.css">
+	<title>Blog | Samuel Pedraza </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="fixed-header border-bottom-nav">
+  <section class="row">
+    <section class="row-1">
+      <ul class="left">
+        <li class="list">Samuel Pedraza</li>
+      </ul>
+      <ul class="right">
+      	<li class="list">
+          <a href="../index.html" class="color-black hover-link">
+            Home
+          </a>
+        </li>
+        <li class="list">
+          <a href="../blog.html" class="color-black hover-link">
+            My Blog
+          </a>
+        </li>
+        <li class="list">
+          <a href="../resume.pdf" class="color-black hover-link">
+          Resume
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</header>
+
+<section class="row center position-bump">
+	<div class="col-1 padding-medium">
+		<h1>Some thoughts on Building Brime (A CSS framework)</h1>
+		<small>By Samuel Pedraza</small>
+	</div>
+</section>
+<div class="row center">
+	<div class="col-4 padding-small">
+		<p class="padding-small">Building a CSS framework was a really interesting task for me to take on. I'd never built a framework before, and especically not one that was supposed to IE7 compatible. There was a small learning curve, but I grasped relatively quickly what I needed to do.</p>
+	</div>
+	<div class="col-4 padding-small">
+		<h3 class="padding-small">
+			<p>
+				Step 1: Learn
+			</p>
+		</h3>
+		<p class="padding-small">I didn't know how exactly I could accomplish this, so I Googled and read a lot about building a grid based framework. I also tried a few frameworks, read through documentation of others, and thought about the overall syntax and purpose of my framework. I knew that it wouldn't be perfect, but it would be a good learning experience, and I would get the chance to be able to build something useful from scratch.</p>
+	</div>
+	<div class="col-4 padding-small">
+		<h3 class="padding-small">
+			<p>
+				Step 2: Build
+			</p>
+		</h3>
+		<p class="padding-small">Next, I actually dove into the code. I built, I tested, I iterated. It was a lot of fun, and I had to Google A LOT. Testing on a IE7 browser broke ALL my code, and it took a lot of figuring out, and Stack Overflow to figure out how the browser reads the code. Finally, I came across something that really helped me.</p>
+
+		<p class="padding-small">I found this snippet of code.
+		</p>
+
+		<code>
+			 <p class="padding-small">.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12  {</p>
+			<br>
+			    <p class="padding-medium">*display: inline; /* this entire section will only be read by ie7 and is a workaround for inline-block*/</p>
+			    <p class="padding-medium">*zoom: 1;</p>
+			    <p class="padding-medium">*box-sizing: border-box;</p>
+			<p class="padding-small">}</p>
+		</code>
+		<p class="padding-small">This helped me make the grid system, backwards compatible.</p>
+	</div>
+	<div class="padding-small col-4">
+		<h3 class="padding-small">
+			<p>
+				Step 3: Future
+			</p>
+		</h3>
+		<p class="padding-small">In the future, I want to style inputs, and buttons. I want to build out and make this a proper framework, something along the lines of Bulma or Bootstrap. It's gonna be a lot of work, but I think that I can definitely put some work into this, and build a good framework.</p>
+	</div>
+</div>
+
+<section class="row center">
+  <section class="col-1">
+      <a href="https://github.com/Samuel-Pedraza" target="_blank" class="padding-small list">
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+      </a>
+    
+    
+      <a href="https://www.facebook.com/samuel.pedraza.9" target="_blank" class="padding-small list">
+        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+      </a>
+    
+      <a href="https://twitter.com/samuel__pedraza" target="_blank" class="padding-small list">
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+      </a>
+    
+    
+      <a href="https://codepen.io/samuel-pedraza" target="_blank" class="padding-small list">
+        <i class="fa fa-codepen fa-2x" aria-hidden="true"></i>
+      </a>
+    
+  </section>
+</section>
+</body>
+</html>

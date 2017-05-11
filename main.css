@@ -260,3 +260,11 @@ p {
   background-color: black;
   color: white;
 }
+
+code {
+  background: lightgray;
+  height: 350px;
+  width: 100%;
+  display: block;
+  text-align: left;
+}
