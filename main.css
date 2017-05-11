@@ -242,3 +242,23 @@ a {
 p {
   text-align: left;
 }
+
+
+
+#mc_embed_signup_scroll input[type=email] {
+  height: 35px;
+  width: 150px;
+  border-radius: 3px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#mc_embed_signup_scroll input[type=submit]{
+  height: 35px;
+  width: 70px;
+  border-radius: 3px;
+  border: 0;
+
+  background-color: black;
+  color: white;
+}
